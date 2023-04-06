@@ -1,5 +1,5 @@
 # Lab Report 1
-*Garvey Li
+*Garvey Li*
 
 ## Remote Access Walkthrough
 
