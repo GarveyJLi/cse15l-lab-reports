@@ -1,4 +1,5 @@
 # Lab Report 1
+*Garvey Li
 
 ## Remote Access Walkthrough
 
@@ -16,5 +17,9 @@
     * For Windows Users
         * Press Ctrl + ` to open the terminal in VSCode. 
         * In the top right corner of the terminal panel, click the down arrow next to the plus sign
-        ![Image](degault_profile.png)
+        
+        ![Image](default_profile.png)
         * Click on "Select Default Profile" and select Git Bash at the top of the window
+
+**Remotely connecting**
+1. In your bash terminal, connect to remote computer by using the command 'ssh cs15lsp23zz@ieng6.ucsd.edu', where zz is whatever your username is
