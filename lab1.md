@@ -4,9 +4,35 @@
 ## Remote Access Walkthrough
 
 **Steps**
-1. Installing VSCode and GitBash
-2. Remotely connecting
-3. Trying some commands!
+1. Finding your CSE15L account(and resetting your password)
+2. Installing VSCode and GitBash
+3. Remotely connecting
+4. Trying some commands!
+
+**Finding your CSE15L account(and resetting your password)**
+1. Go to https://sdacs.ucsd.edu/~icc/index.php and look up your account using your username (email addresd minus the @ucsd.edu) and PID (AXXXXXXXX). If you don't know your username, you can also use your last name in the 2nd entry for account lookup.
+
+![Image](account_lookup.PNG)
+
+3. Once the lookup is successful, there should be an account name cs15l followed by the term and your id/username for remote connecting. It might look something like cs15lsp23zz (sp23 is the term and zz is the id/username). Copy the entire account name so you can use it later.
+
+![Image](cse_acc.PNG)
+
+3. Click on the box containing your account username and it should take you to this page. If you ever need to reset your password, you can do it here.
+
+![Image](cse_acc_details.PNG)
+
+4. If you don't know your password or haven't set it, click on the password change tool link above. Then click on "Proceed to the password change tool".
+
+![Image](password_reset.PNG)
+
+5. In the entry box available, enter the cse15l account user name you copy pasted (the one that looks like cs15lsp23zz).
+6. Click on the "I want to reset my course-specific account password". This will ask for a duo authentication. Confirm it. 
+7. The page will ask to send an email with instructions on resetting your password. Click yes.
+8. Go to your email and open up the email you received. Click on the "UC San Diego password reset page" hyperlink.
+9. Type in your new password and confirm it. Then click "Change Password"
+10. Your password should be reset
+
 
 **Installing VSCode and GitBash**
 1. Go to the [Visual Studio Code website](https://code.visualstudio.com/) and follow their instructions on downloading the version corresponding to your OS(macOS, Windows, Linux, etc)
@@ -33,6 +59,8 @@
 
    ![Image](ssh_screenshot.PNG)
    
+   If your password was incorrect, make sure you're typing it out correctly, or try resetting your account password(Steps 4-10 in the first section)
+   
    If your password was correct, the output should look something like this:
    
    ```
@@ -40,9 +68,10 @@
    RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
    This key is not known by any other names
    Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-   Please type 'yes', 'no' or the fingerprint: yes
+   Please type 'yes', 'no' or the fingerprint: 
    ```
-3. Type yes to continue. The next bit of output should now look like this: 
+   
+3. Enter yes to continue. The next bit of output should now look like this: 
 
    ```
    Warning: Permanently added 'ieng6.ucsd.edu' (RSA) to the list of known hosts.
@@ -92,8 +121,19 @@
    [cs15lsp23zz@ieng6-203]:~:1$
 
    ```
+   
+   4. If you want to terminate your connection, hit Ctrl + D or Cmd + D in the terminal. Then you can close your terminal by entering the command `exit`
 
 4. Now that you're connected, let's try some commands.
 
 **Trying some Commands!**
+* To check what directory your currently in, enter the command `pwd`
+* To check the immediate contents of you current directory, enter the command `ls`
+* To check the immediate contents of another sub-directory, enter the command `ls sub_directory_name`
+* To navigate to a sub-directory, enter the command `cd sub_directory_name` 
+* To go to the current directory's parent directory, enter the command `cd ..`
+* To go back to the root directory, enter the command `cd`
+* To make a new directory, enter the command `mkdir new_directory_name`
+* To print the contents of a file, use the command `cat file_name` or `cat file_path` (you can have multiple files for this, just separate their names/paths with a space)
+* To copy a file to a directory, use the command 'cp file_name directory`
 
