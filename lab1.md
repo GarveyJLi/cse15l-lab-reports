@@ -74,6 +74,7 @@
 3. Enter yes to continue. The next bit of output should now look like this: 
 
    ```
+   
    Warning: Permanently added 'ieng6.ucsd.edu' (RSA) to the list of known hosts.
    (cs15lsp23zz@ieng6.ucsd.edu) Password:
    Last login: Tue Mar 14 17:32:19 2023 from 128.54.202.210
