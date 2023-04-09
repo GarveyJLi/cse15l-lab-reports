@@ -135,7 +135,7 @@
 * To go back to the root directory, enter the command `cd`
 * To make a new directory, enter the command `mkdir new_directory_name`
 * To print the contents of a file, use the command `cat file_name` or `cat file_path` (you can have multiple files for this, just separate their names/paths with a space)
-* To copy a file to a directory, use the command 'cp file_name directory`
+* To copy a file to a directory, use the command `cp file_name directory`
 
 *Some examples*
 
