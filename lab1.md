@@ -73,59 +73,26 @@
    
 3. Enter yes to continue. The next bit of output should now look like this: 
 
-   ```
+   ``` 
+   Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu
 
-      Warning: Permanently added 'ieng6.ucsd.edu' (RSA) to the list of known hosts.
-      (cs15lsp23zz@ieng6.ucsd.edu) Password:
-      Last login: Tue Mar 14 17:32:19 2023 from 128.54.202.210
-      Attempting to create directory /home/linux/ieng6/cs15lsp23/cs15lsp23zz/perl5
-      ============================ NOTICE =================================
-      Authorized use of this system is limited to password-authenticated
-      usernames which are issued to individuals and are for the sole use of
-      the person to whom they are issued.
+   You are using 0% CPU on this system
 
-      Privacy notice: be aware that computer files, electronic mail and
-      accounts are not private in an absolute sense.  You are responsible
-      for adhering to the ETS Acceptable Use Policies, which you can review at:
-      https://blink.ucsd.edu/faculty/instruction/tech-guide/policies/ets-acceptable-use-policies.html
-      =====================================================================
-
-      *** Problems, Suggestions, or Feedback ***
-
-          For help requests, please create a ticket at:
-          https://support.ucsd.edu/its
-
-          You may also report issues, suggestions, or feedback by e-mailing root on any system:
-          mail -s "Your subject here" root
-          Type your message - Ctrl+D to send
-
-      *** Access our Linux ssh terminals or remote desktops via a web browser at: ***
-          https://linuxcloud.ucsd.edu
-
-          All accounts must be enrolled in Duo for access. No VPN required.
+   Cluster Status
+   Hostname     Time    #Users  Load  Averages
+   ieng6-201   08:25:01   9  0.37,  0.13,  0.13
+   ieng6-202   08:25:01   4  0.00,  0.04,  0.10
+   ieng6-203   08:25:01   4  0.02,  0.04,  0.10
 
 
-      -------------------------------------------------------
-
-      Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu
-
-      You are using 0% CPU on this system
-
-      Cluster Status
-      Hostname     Time    #Users  Load  Averages
-      ieng6-201   08:25:01   9  0.37,  0.13,  0.13
-      ieng6-202   08:25:01   4  0.00,  0.04,  0.10
-      ieng6-203   08:25:01   4  0.02,  0.04,  0.10
-
-
-      Thu Apr 06, 2023  8:27am - Prepping cs15lsp23
-      [cs15lsp23zz@ieng6-203]:~:1$
+   Thu Apr 06, 2023  8:27am - Prepping cs15lsp23
+   [cs15lsp23zz@ieng6-203]:~:1$
 
    ```
    
-   4. If you want to terminate your connection, hit Ctrl + D or Cmd + D in the terminal. Then you can close your terminal by entering the command `exit`
+4. If you want to terminate your connection, hit Ctrl + D or Cmd + D in the terminal. Then you can close your terminal by entering the command `exit`
 
-4. Now that you're connected, let's try some commands.
+5. Now that you're connected, let's try some commands.
 
 **Trying some Commands!**
 * To check what directory your currently in, enter the command `pwd`
