@@ -12,19 +12,19 @@
 **Finding your CSE15L account(and resetting your password)**
 1. Go to [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) and look up your account using your username (email address minus the @ucsd.edu) and PID (AXXXXXXXX). If you don't know your username, you can also use your last name in the 2nd entry for account lookup.
 
-![Image](account_lookup.PNG)
+![Image](lab1_images/account_lookup.PNG)
 
 3. Once the lookup is successful, there should be an account name cs15l followed by the term and your id/username for remote connecting. It might look something like cs15lsp23zz (sp23 is the term and zz is the id/username). Copy the entire account name so you can use it later.
 
-![Image](cse_acc.PNG)
+![Image](lab1_images/cse_acc.PNG)
 
 3. Click on the box containing your account username and it should take you to this page. If you ever need to reset your password, you can do it here.
 
-![Image](cse_acc_details.PNG)
+![Image](lab1_images/cse_acc_details.PNG)
 
 4. If you don't know your password or haven't set it, click on the password change tool link above. Then click on "Proceed to the password change tool".
 
-![Image](password_reset.PNG)
+![Image](lab1_images/password_reset.PNG)
 
 5. In the entry box available, enter the cse15l account user name you copy pasted (the one that looks like cs15lsp23zz).
 6. Click on the "I want to reset my course-specific account password". This will ask for a duo authentication. Confirm it. 
@@ -39,7 +39,7 @@
 2. If you are not using Windows, skip this step. Otherwise, go to the [website for Git](https://gitforwindows.org/) and follow the instructions for installation.
 3. Open VSCode. It should look something like this.
 
-   ![Image](vsc_screenshot.PNG)
+   ![Image](lab1_images/vsc_screenshot.PNG)
    
    Now, open your terminal.
    
@@ -49,7 +49,7 @@
         * Press Ctrl + ` to open the terminal in VSCode. 
         * In the top right corner of the terminal panel, click the down arrow next to the plus sign
         
-        ![Image](default_profile.png)
+        ![Image](lab1_images/default_profile.png)
         * Click on "Select Default Profile" and select Git Bash at the top of the window
         * Next to the down arrow you previously clicked, click on the + 
 
@@ -57,7 +57,7 @@
 1. In your bash terminal, connect to remote computer by using the command `ssh cs15lsp23zz@ieng6.ucsd.edu`, where zz is whatever your username is.
 2. Enter your account password. Don't worry if nothing shows up when you type, it's meant to do that. Just press enter once you've typed out your password
 
-   ![Image](ssh_screenshot.PNG)
+   ![Image](lab1_images/ssh_screenshot.PNG)
    
    If your password was incorrect, make sure you're typing it out correctly, or try resetting your account password(Steps 4-10 in the first section)
    
@@ -112,5 +112,5 @@
 
 *Some examples*
 
-![Image](bash_commands.PNG)
+![Image](lab1_images/bash_commands.PNG)
 
