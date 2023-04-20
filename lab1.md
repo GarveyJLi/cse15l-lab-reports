@@ -10,7 +10,7 @@
 4. Trying some commands!
 
 **Finding your CSE15L account(and resetting your password)**
-1. Go to https://sdacs.ucsd.edu/~icc/index.php and look up your account using your username (email addresd minus the @ucsd.edu) and PID (AXXXXXXXX). If you don't know your username, you can also use your last name in the 2nd entry for account lookup.
+1. Go to [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) and look up your account using your username (email address minus the @ucsd.edu) and PID (AXXXXXXXX). If you don't know your username, you can also use your last name in the 2nd entry for account lookup.
 
 ![Image](account_lookup.PNG)
 
@@ -100,10 +100,15 @@
 * To check the immediate contents of another sub-directory, enter the command `ls sub_directory_name`
 * To navigate to a sub-directory, enter the command `cd sub_directory_name` 
 * To go to the current directory's parent directory, enter the command `cd ..`
+   * Now if you use `ls`, you should see the directory you were previously in listed
 * To go back to the root directory, enter the command `cd`
 * To make a new directory, enter the command `mkdir new_directory_name`
+   * Check that it exists by using `ls new_directory_name` or `cd new_directory_name`
+   * If it doesn't exist, make sure you spelled the sub directory correctly
 * To print the contents of a file, use the command `cat file_name` or `cat file_path` (you can have multiple files for this, just separate their names/paths with a space)
+   * The contents of the file should print in the terminal output, if the path has no syntax or spelling errors
 * To copy a file to a directory, use the command `cp file_name directory`
+   * To check that it worked, try navigating to that directory using the `cd` command.
 
 *Some examples*
 
