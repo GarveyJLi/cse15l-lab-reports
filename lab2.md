@@ -87,21 +87,24 @@ is displayed on the webpage.
 
 **JUnit tests**
 
+*Failed test*
+
     public class ArrayTests {
-
-        //reversed Tests
-
-        void generalTestReversed(int[] input, int[] expected) {
-            int[] input_copy = input.clone();
-            ArrayExamples.reverseInPlace(input_copy);
-            assertArrayEquals(expected, input_copy);
-        }
-
         //Fails. Array being returned has the same memory location as the input.
         @Test
         public void testReversedNewObject() {
             int[] input = {1};
             assertFalse(input == ArrayExamples.reversed(input));
+        }
+    }
+
+*Passed test*
+
+    public class ArrayTests {
+        void generalTestReversed(int[] input, int[] expected) {
+            int[] input_copy = input.clone();
+            ArrayExamples.reverseInPlace(input_copy);
+            assertArrayEquals(expected, input_copy);
         }
 
         //Passes
@@ -110,6 +113,9 @@ is displayed on the webpage.
             generalTestReversed(new int[] {0, 0, 0}, new int[] {0, 0, 0});
         }
     }
+
+
+    
 
 ![Image](lab2_images/arraytest_junit_results.PNG)
 
