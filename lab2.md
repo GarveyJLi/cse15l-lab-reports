@@ -3,7 +3,7 @@
 *Garvey Li*
 
 
-## Part 1: String Server #
+## Part 1: String Server 
 
   **String Server Code**
 
@@ -11,9 +11,6 @@
     import java.net.URI;
 
     class Handler implements URLHandler {
-        // The one bit of state on the server: a number that will be manipulated by
-        // various requests.
-        
         String total_String = "";
 
         public String handleRequest(URI url) {
@@ -70,6 +67,76 @@ hehehehe
 is displayed on the webpage.
 
 
-## Part 2: Bugs #
+## Part 2: Bugs 
 
-## Part 3: What I learned #
+**Code with bug**
+
+    public class ArrayExamples {
+        static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = newArray[arr.length - i - 1];
+            }
+        return arr;
+        }
+    }
+
+**JUnit tests**
+
+    public class ArrayTests {
+
+        //reversed Tests
+
+        void generalTestReversed(int[] input, int[] expected) {
+            int[] input_copy = input.clone();
+            ArrayExamples.reverseInPlace(input_copy);
+            assertArrayEquals(expected, input_copy);
+        }
+
+        //Fails. Array being returned has the same memory location as the input.
+        @Test
+        public void testReversedNewObject() {
+            int[] input = {1};
+            assertFalse(input == ArrayExamples.reversed(input));
+        }
+
+        //Passes
+        @Test
+        public void testReversedSizeThree() {
+            generalTestReversed(new int[] {0, 0, 0}, new int[] {0, 0, 0});
+        }
+    }
+
+![Image](lab2_images/arraytest_junit_results.PNG)
+
+**Bug Fix**
+
+*Before*
+
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = newArray[arr.length - i - 1];
+        }
+        return arr;
+    }
+*After*
+        
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            newArray[i] = arr[arr.length - i - 1];
+        }
+        return newArray;
+    }
+
+**Why this fix addresses the issue**
+
+This method is supposed to return a new separate array with the contents of the input array but reversed. The original code does not return a new array, and instead does operations on and return the input array. In addition to this, the input array is never reversed, because the contents of newArray are initialized as all 0. Swapping the variable names for arr and newArray fixes this because now, newArray's values are being assigned to the values in arr, but in reverse, and now newArray is being returned instead of arr.
+        
+
+## Part 3: What I learned 
+
+Something I learned from lab in weeks 2 and 3 was how to properly configure Java files in VSCode. I'm used to using IntelliJ for my Java projects, so I was initially very confused as to how to set up my files in VSCode. However, I've learned that instead of selecting a filetype to create like in IntelliJ for Java or Kotlin, you create a new .java file and configure the class inside the .java file manually. I also learned that there is a way to just create a class file using the Java Projects tab view in the VSCode Explorer.
+
+![Image](lab2_images/vscode_java_projs_tab.PNG)
