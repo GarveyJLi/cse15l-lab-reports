@@ -25,6 +25,7 @@ It is also useful for when the file extension itself is not always consistent. S
 2.`-not`
 
 *Explanation*
+
 The `-not` command line option finds directories and files that don't contain whatever search value is used. 
 
 ![Image](lab3_images/-notname.PNG)
@@ -39,6 +40,7 @@ Here, `-not` is being used to find any files that are not any of the `chapter` f
 3.`-and`
 
 *Explanation*
+
 The `and` command line option lets us combine multiple arguments when using `find`, and finds the files and directories that satisfy *all* of the arguments.
 
 ![Image](lab3_images/-andnn.PNG)
@@ -52,6 +54,7 @@ In this example, we are looking for files that don't contain `chapter` in their 
 4.`-or`
 
 *Explanation*
+
 The `-or` option lets us combine multiple arguments and finds all the files and directories that satisfy *at least* on of the arguments.
 
 ![Image](lab3_images/-orccrr.PNG)
