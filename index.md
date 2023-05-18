@@ -10,4 +10,4 @@
 
 [Lab Report 3](https://garveyjli.github.io/cse15l-lab-reports/lab3.html)
 
-
+[Lab Report 4](https://garveyjli.github.io/cse15l-lab-reports/lab4.html)
